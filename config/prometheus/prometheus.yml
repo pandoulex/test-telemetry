@@ -1,0 +1,7 @@
+# A list of scrape configurations.
+scrape_configs:
+  - job_name: frontend
+    scheme: http
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['graphite:9108']
